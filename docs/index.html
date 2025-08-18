@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2025生成AI体験</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">八戸工業大学 工学部 工学科 システム情報工学コース</a>
+        </div>
+      </nav>
+    </header>
+
+
+    https://docs.google.com/presentation/d/18wYABnEF7JMo8yoRXq-vvaSBc327edvycwaHOxAyaZE/edit?usp=sharing
+
+    <div class="container mt-5 pt-3">
+      <h1>2025生成AI体験</h1>
+      <div class="card mt-3">
+        <div class="card-body">
+          <h2>配布資料</h2>
+          <div class="card-body">
+            <p class="fs-5">この<a href="https://docs.google.com/presentation/d/1A7nvfj5wt_TXVQBg2wCpmmbKkfBT6pQCjORzhIfMtDI/edit?usp=sharing" target="_blank">リンク</a>をクリック</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mt-5">
+        <div class="card-body">
+          <h2>画像生成AIの起動</h2>
+          <h3>Microsoft ONNX Runtime Webの場合</h3>
+          <div class="card">
+            <div class="card-body">
+              <ol class="fs-5">
+                <li>この<a href="https://guschmue.github.io/ort-webgpu/sd-turbo/index.html" target="_blank">リンク</a>をクリック</li>
+              </ol>
+            </div>
+          </div>
+          <h3 class="mt-4">AUTOMATIC 1111の場合</h3>
+          <div class="card">
+            <div class="card-body">
+              <ol class="fs-5">
+                <li>画面下のタスクバーのAUTOMATIC 1111のアイコンをクリック<br>
+                <img src="a1111-icon.png" alt=""></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mt-3">
+        <div class="card-body">
+          <h2>画像生成AIのプロンプト例</h2>
+          <p class="fs-5">flying battle ship, castle in sky (空飛ぶ戦艦, 空中の城)</p>
+          <h3 class="mt-4">Microsoft ONNX Runtime Web</h3>
+          <div class="card">
+            <div class="card-body">
+              <pre><code class="fs-6">flying battle ship, castle in sky</code></pre>
+            </div>
+          </div>
+          <h3 class="mt-4">AUTOMATIC 1111</h3>
+          <div class="card">
+            <div class="card-body">
+              <pre><code class="fs-6"><span style="color: blue;">&lt;lora:lcm-lora-sdv1-5:1&gt;</span> flying battle ship, castle in sky</code></pre>
+            </div>
+          </div>
+          <p><code class="fs-6"><span style="color: blue;">&lt;lora:lcm-lora-sdv1-5:1&gt;</span></code>は爆速化の指定</p>
+        </div>
+      </div>
+
+      <div class="card mt-3">
+        <div class="card-body">
+          <h2>画像生成AIのプロンプトの書き方</h2>
+          <p class="fs-5">画風 + 生成したいもの + その補足 + 追加情報</p>
+          <h3>画風</h3>
+          <ul>
+            <li>high quality (高画質)</li>
+            <li>photo (写真)</li>
+            <li>cinematic (映画風)</li>
+            <li>painting (油絵)</li>
+            <li>anime (アニメ)</li>
+          </ul>
+          <h3>その補足</h3>
+          <ul>
+            <li>portrait (肖像)</li>
+            <li>full body (全身)</li>
+            <li>〜 hair (髪型)</li>
+            <li>moonlight (月夜)</li>
+            <li>backlight (逆光)</li>
+          </ul>
+          <h3>追加情報</h3>
+          <ul>
+            <li>masterpiece (名作)</li>
+            <li>Nikon D6 (一眼レフ)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card mt-5">
+        <div class="card-body">
+          <h2>文章生成AIの起動</h2>
+          <div class="card-body">
+            <ol class="fs-5">
+              <li>画面下のタスクバーのLM Studioのアイコンをクリック<br>
+                <img src="lmstudio-icon.png" alt=""></li>
+              <li>画面左の「チャット(ふきだし)」のアイコンをクリック</li>
+              <li>画面上の「読み込むモデルを選択」で使用するAI(モデル)を選ぶ<br>
+                  具体的には「alfredplpl/gemma-2-2b-jpn-it-gguf」</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mt-3">
+        <div class="card-body">
+          <h2>文章生成AIのプロンプト例</h2>
+          <ul>
+            <li>こんにちは</li>
+            <li>わたしは、日本の高校生です。生成AIについて、何を理解しておくといいですか？</li>
+            <li>Gemma 2 2B JPNの2Bは何ですか？</li>
+            <li>Gemmaってどういう意味？</li>
+            <li>大規模言語モデルって何？</li>
+            <li>Gemmaを使うと何ができますか？</li>
+            <li>Gemmaを何に使ったらいいでしょうか？</li>
+            <li>でも、Gemmaの返答をそのまま使ったら、カンニングですよね？</li>
+            <li>Gemmaの返答を参考にすることと、返答をそのまま使うことの違いははっきりしないと思います。ぼくが成長するには、どういふうに使ったらいいですか？</li>
+            <li>
+              <pre style="border: 1px solid gray;">
+#状況
+ぼくは高校生です。
+高校の授業で、大学を訪問して大学の先生の講演を聞きました。
+レポートを高校に提出する必要があります。
+
+#講演の内容
+「生成AIで何ができるか」
+1. AIのしくみ
+2. 画像生成AIのしくみとStable Diffusionの体験
+3. 文章生成AIのしくみとGemma 2 2B JPNの体験
+4. 生成AIに関する問題
+5. AIを活用できる人になるために
+
+#お願い
+レポートの目次を作ってください。
+段階的に考えてください。</pre>
+            </li>
+
+            <li>画像生成AIとは何ですか？</li>
+            <li>Stable Diffusionについて教えて</li>
+            <li>Stable Diffusionはどういうしくみで画像を生成しますか？</li>
+            <li>
+              <pre style="border: 1px solid gray;">
+#状況
+Stable Diffusionを利用して画像を生成している
+
+#生成したい画像
+日本
+3つの神社の合同の夏祭り
+夕方
+人形を山車に載せて街中を参加者が引っ張って移動
+
+#依頼
+Stable Diffusionに与えるpromptを英語で作ってください。
+画像がうまく生成されるように言葉を補ってください。
+段階的に考えてください。</pre>
+            </li>              
+              
+            <li>
+              <pre style="border: 1px solid gray;">
+#状況
+Stable Diffusionを利用して画像を生成している
+
+#生成したい画像
+巨大なロボットと怪獣が戦っている
+怪獣は日本の特撮に出てくるような姿をしていて、口から炎を吐いている
+ロボットはかっこよくスマートで剣を構えて怪獣に切りかかっている
+
+#依頼
+Stable Diffusionに与えるpromptを英語で作ってください。
+画像がうまく生成されるように言葉を補ってください。
+段階的に考えてください。</pre>
+            </li>    
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="card mt-3">
+        <div class="card-body">
+          <h2>生成AIに関する問題</h3>
+          <h3 class="mt-4">LLMのstrawberry問題</h3>
+          <div class="card">
+            <div class="card-body">
+              <pre><code class="fs-6">what is the number of <span style="color: red">r</span> s in st<span style="color: red">r</span>awbe<span style="color: red">rr</span>y</code></pre>
+            </div>
+          </div>
+
+          <h3 class="mt-4">画像生成AIのLone banana問題</h3>
+          <div class="card">
+            <div class="card-body">
+              <pre><code class="fs-6"><span style="color: red">A single</span> banana casting a shadow on a grey background</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
